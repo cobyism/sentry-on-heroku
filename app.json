@@ -1,0 +1,43 @@
+{
+  "name": "Sentry",
+  "description": "Sentry is a realtime, platform-agnostic error logging and aggregation platform.",
+  "website": "https://getsentry.com/",
+  "repository": "https://github.com/getsentry/sentry",
+  "logo": "https://raw.githubusercontent.com/getsentry/sentry/master/docs/_static/logo.png",
+  "scripts": {
+    "postdeploy": "sentry --config=sentry.conf.py upgrade"
+  },
+  "keywords": [
+    "exception",
+    "tracking",
+    "monitoring",
+    "logging",
+    "real-time"
+  ],
+  "addons": [
+    "heroku-postgresql:dev",
+    "mandrill"
+  ],
+  "env": {
+    "ADMINS": {
+      "description": "Set the email addresses that should be notified (comma separated, no spaces)",
+      "value": "one@example.com,two@example.com"
+    },
+    "SENTRY_URL_PREFIX": {
+      "description": "Set the absolute URL to the Sentry root directory (no trailing slash)",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "SERVER_EMAIL": {
+      "description": "Set the reply-to email address for outgoing mail",
+      "value": "sentry@example.com"
+    },
+    "SENTRY_KEY": {
+      "description": "Sentry's shared secret for global administration privileges",
+      "generator": "secret"
+    },
+    "DJANGO_SETTINGS_MODULE": {
+      "description": "Django settings module to be used",
+      "value": "sentry.conf"
+    }
+  }
+}

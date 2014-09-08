@@ -1,0 +1,2 @@
+sentry==6.4.4
+sentry-github==0.1.2
