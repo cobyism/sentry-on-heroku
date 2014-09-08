@@ -3,3 +3,4 @@ sentry-github
 dj_database_url
 django-bcrypt
 django-secure
+psycopg2
