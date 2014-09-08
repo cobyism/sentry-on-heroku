@@ -1,4 +1,4 @@
-import sentry.conf.py
+import sentry.conf
 from django.contrib.auth.models import User
 SENTRY_KEY = os.environ.get('SENTRY_KEY')
 SENTRY_ADMINS = os.environ.get('ADMINS', '').split(',')
