@@ -15,7 +15,7 @@
     "real-time"
   ],
   "addons": [
-    "heroku-postgresql:dev",
+    "heroku-postgresql",
     "mandrill"
   ],
   "env": {
