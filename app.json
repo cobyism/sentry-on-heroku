@@ -4,9 +4,6 @@
   "website": "https://getsentry.com/",
   "repository": "https://github.com/getsentry/sentry",
   "logo": "https://raw.githubusercontent.com/getsentry/sentry/master/docs/_static/logo.png",
-  "scripts": {
-    "postdeploy": "sentry --config=sentry.conf.py upgrade"
-  },
   "keywords": [
     "exception",
     "tracking",
