@@ -8,11 +8,15 @@ To get your own instance of Sentry running on Heroku, just click the button belo
 
 ## Follow-up
 
-Create a user account for yourself with:
+Unfortunately, there’s one step you have to do manually via the command-line
+before you can use your Sentry installation. First, ensure you have the
+[Heroku Toolbelt](https://toolbelt.heroku.com/) installed, and then run the following:
 
 ```sh
-sentry --config=sentry.conf.py createsuperuser
+heroku run --app YOURAPPNAME sentry --config=sentry.conf.py createsuperuser
 ```
+
+Enter a username, email address, and password for your first user account.
 
 ## License
 

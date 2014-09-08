@@ -5,4 +5,3 @@ django-bcrypt
 django-secure
 psycopg2
 gevent
-pexpect
