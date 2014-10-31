@@ -17,8 +17,8 @@
   ],
   "env": {
     "ADMINS": {
-      "description": "Set the email addresses that should be notified (comma separated, no spaces)",
-      "value": "one@example.com,two@example.com"
+      "description": "Set the email address(es) that should be notified (if multiple: comma separated, no spaces)",
+      "value": "admin@example.com"
     },
     "SENTRY_URL_PREFIX": {
       "description": "Set the absolute URL to the Sentry root directory (no trailing slash)",
@@ -33,7 +33,7 @@
       "generator": "secret"
     },
     "DJANGO_SETTINGS_MODULE": {
-      "description": "Django settings module to be used",
+      "description": "Django settings module to be used (you shouldn’t need to change this)",
       "value": "sentry.conf"
     }
   }

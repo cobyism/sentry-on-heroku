@@ -17,6 +17,7 @@ heroku run --app YOURAPPNAME sentry --config=sentry.conf.py createsuperuser
 ```
 
 Enter a username, email address, and password for your first user account.
+Once that’s completed, you can run `heroku open --app YOURAPPNAME` and sign in. :grin:
 
 ## License
 
